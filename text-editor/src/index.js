@@ -1,5 +1,11 @@
 import React from 'react';
+
+import { Editor } from 'react-draft-wysiwyg';
+import '../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+
 import ReactDOM from 'react-dom';
 import './index.css';
 
-// ReactDOM.render(<App />, document.getElementById('root'));
+const EditorComponent = () => <Editor />
+
+ReactDOM.render(<EditorComponent />, document.getElementById('root'));
